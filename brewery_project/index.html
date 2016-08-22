@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="webDesign.css">
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="webDesign.css">
+  <script>
+    $(document).ready(function(){
+      $("#holambier_button").click(function(){
+        $("#holambier").css("display", "block");
+        $("#homepage").hide();
+      });
+    });
+  </script>
 </head>
 <body>
+  <div id="homepage">
+    <img id="logo" src="media/logo/logo_grande.png" alt="">
+    <div class="button-line">
+      <button class="transparent" id="holambier_button"> HOLAMBIER </button>
+      <button class="transparent" id="holambra_button"> HOLAMBRA </button>
+    </div >
+    <div class="button-line">
+      <button class="transparent" id="bieren_button"> BIEREN </button>
+      <button class="transparent" id="contato_button"> CONTATO </button>
+    </div>
+  </div>
 
-<video playsinline autoplay muted loop poster="background_media/poster_img.png" src="Brewry_vidHD.mov"
- id="bgvid">
-  <!-- <source src="Brewry_vidHD.mov" type="video/mov"> -->
-</video>
+  <div class="inner-page" id="holambier">
+    <img src="media/logo/logo_small.png" alt="">
+    <h1>
+      UMA CERVEJA COM HISTORIA,
+      COM AROMA E COM SABOR
+    </h1>
+    <p>
+      Orgulho em apresentar aos entuiastas e experientes do mundo
+      cerjeiro, em fazer parte dessa revolucao que aconteceu no
+      hemisfiero norte e que agora chegou com muita forca no Brasil.
+    </p>
+    <h4> Leia Mals </h4>
+  </div>
 
+  <div class="description-box">
+    <p class="full-description">
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+    </p>
+  </div>
+
+  <div class="inner-page" id="holambra">
+    <img src="media/logo/logo_small.png" alt="">
+  </div>
+
+  <div class="inner-page" id="bieren">
+    <img src="media/logo/logo_small.png" alt="">
+  </div>
+
+  <div class="inner-page" id="contato">
+    <img src="media/logo/logo_small.png" alt="">
+  </div>
+  <video playsinline autoplay muted loop poster="media/background/poster_img.png"
+  src="media/background/bg_video.mp4" id="bgvid">
+  </video>
 </body>
 
 </html>
