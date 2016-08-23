@@ -31,7 +31,13 @@ img#logo {
   margin-bottom: 10px;
 }
 
-button {
+div.button-line {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.button-line button {
   font-family: clementepdacextralight;
   font-size: 24px;
   border: 0px;
@@ -42,30 +48,17 @@ button {
   margin-right: 15px;
 }
 
-div.button-line {
-  display: flex;
-  flex-flow: row wrap;
-
-  justify-content: center;
-}
-
 .transparent {
   background: rgba(255, 255, 255, 0.5);
 }
 
-div.inner-page {
-  position: absolute;
-  z-index: 1;
+div#holambier, div#holambra, div#bieren, div#contato {
   display: none;
-  width: 100%;
 }
 
-div.description-box {
-  position: fixed;
-  overflow: auto;
-  width: 200px;
-  left: 200px;
-  right: 200px;
+div.inner-page {
+  position: absolute;
+  width: 100%;
 }
 
 .inner-page > h1 {
@@ -74,7 +67,6 @@ div.description-box {
   width: 450px;
   line-height: 50px;
   margin-bottom: 25px;
-  z-index: inherit;
 }
 
 .inner-page > p {
@@ -82,7 +74,6 @@ div.description-box {
   color: white;
   width: 450px;
   line-height: 30px;
-  z-index: inherit;
 }
 
 .inner-page > h4 {
@@ -90,7 +81,41 @@ div.description-box {
   color: white;
 }
 
-p.full-description {
-  font-family: clementepdacextralight;
+div.description-box {
+  display: none;
+  position: absolute;
   background-color: white;
+  font-family: clementepdacextralight;
+  width: 70%;
+  height: 70%;
+  margin: 8% auto;
+  padding: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.description-box span {
+  margin: -4.5%;
+  position: relative;
+  float: right;
+}
+
+.description-box p {
+  font-size: 12px;
+}
+
+.description-box h2 {
+
+}
+
+div.holambra-button-line {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }

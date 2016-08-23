@@ -2,15 +2,8 @@
 <html>
 <head>
   <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/myscripts.js"></script>
   <link rel="stylesheet" type="text/css" href="webDesign.css">
-  <script>
-    $(document).ready(function(){
-      $("#holambier_button").click(function(){
-        $("#holambier").css("display", "block");
-        $("#homepage").hide();
-      });
-    });
-  </script>
 </head>
 <body>
   <div id="homepage">
@@ -18,43 +11,72 @@
     <div class="button-line">
       <button class="transparent" id="holambier_button"> HOLAMBIER </button>
       <button class="transparent" id="holambra_button"> HOLAMBRA </button>
-    </div >
+    </div>
     <div class="button-line">
       <button class="transparent" id="bieren_button"> BIEREN </button>
       <button class="transparent" id="contato_button"> CONTATO </button>
     </div>
   </div>
 
-  <div class="inner-page" id="holambier">
+  <div id="holambier">
+    <div class="inner-page">
+      <img src="media/logo/logo_small.png" alt="">
+      <h1>
+        UMA CERVEJA COM HISTORIA,
+        COM AROMA E COM SABOR
+      </h1>
+      <p>
+        Orgulho em apresentar aos entuiastas e experientes do mundo
+        cerjeiro, em fazer parte dessa revolucao que aconteceu no
+        hemisfiero norte e que agora chegou com muita forca no Brasil.
+      </p>
+      <h4 id="read-more"> Leia Mals </h4>
+    </div>
+
+    <div class="description-box">
+      <span> X </span>
+      <h2> ACREDITAMOS QUE SERVEJA PODE SER MUITO MAIS QUE UMA BEBIDA SOCIAL, ELA PODE SER UMA EXPERIENCA </h2>
+      <p>
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      </p>
+      <p>
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+        BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
+      </p>
+    </div>
+  </div>
+
+  <div id="holambra">
+    <div class="inner-page">
     <img src="media/logo/logo_small.png" alt="">
-    <h1>
-      UMA CERVEJA COM HISTORIA,
-      COM AROMA E COM SABOR
-    </h1>
+    <h1> UM PENCHINHO DA HOLANDA NO BRASIL </h1>
     <p>
-      Orgulho em apresentar aos entuiastas e experientes do mundo
-      cerjeiro, em fazer parte dessa revolucao que aconteceu no
-      hemisfiero norte e que agora chegou com muita forca no Brasil.
+      Unica estancia tursitica da Regiao Metropolitana de Campinas,
+      Holambra e reconhisida naciolamente por seu potential para a
+      producao de flores e de plantas arnamentais
     </p>
-    <h4> Leia Mals </h4>
+    <h4 id="read-more2"> Leia Mals </h4>
+    </div>
+
+    <div class="holambra-button-line">
+      <button>COMO CHEGAR</button>
+      <button>ONDE DORMIR</button>
+    </div>
   </div>
 
-  <div class="description-box">
-    <p class="full-description">
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-      BLAH BLAH BLAH GOT CLICKED FFfFFFFFFFFFFFFF
-    </p>
-  </div>
-
-  <div class="inner-page" id="holambra">
-    <img src="media/logo/logo_small.png" alt="">
-  </div>
 
   <div class="inner-page" id="bieren">
     <img src="media/logo/logo_small.png" alt="">
@@ -63,6 +85,7 @@
   <div class="inner-page" id="contato">
     <img src="media/logo/logo_small.png" alt="">
   </div>
+
   <video playsinline autoplay muted loop poster="media/background/poster_img.png"
   src="media/background/bg_video.mp4" id="bgvid">
   </video>
