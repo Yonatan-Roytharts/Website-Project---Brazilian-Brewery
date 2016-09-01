@@ -24,16 +24,17 @@ video#bgvid {
   background-size: cover;
 }
 
+svg {
+  display: none;
+}
 img#logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15%;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   width: 50%;
 }
-
-
 
 div.button-line {
   display: flex;
@@ -252,4 +253,9 @@ div.contact-page {
   right: 0;
   width: 600px;
   height: 600px;
+}
+
+.social-icon-image {
+  height: 70px;
+  width: 350px;
 }
