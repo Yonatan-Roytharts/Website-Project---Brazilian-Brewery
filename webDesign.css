@@ -24,9 +24,9 @@ video#bgvid {
   background-size: cover;
 }
 
-svg {
+/*svg {
   display: none;
-}
+}*/
 img#logo {
   display: block;
   margin-left: auto;
